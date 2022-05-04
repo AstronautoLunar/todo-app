@@ -1,4 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
+import colors from './colors';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -9,6 +11,29 @@ const GlobalStyle = createGlobalStyle`
 
     font-family: 'Josefins Sans', Helvetica, sans-serif;
   }
+
+  body {
+    background-color: ${toggleThemeArea({
+      theme: 'dark'
+    })}
+  }
 `;
+
+type ToggleThemeAreaProps = {
+  theme: 'light' | 'dark';
+}
+
+function toggleThemeArea({ theme }: ToggleThemeAreaProps) {
+  switch(theme) {
+    case 'dark':
+      return colors.dark.veryDarkBlue;
+    
+    case 'light':
+      return colors.light.veryLightGray;
+
+    default:
+      return colors.dark.veryDarkBlue
+  }
+}
 
 export default GlobalStyle;

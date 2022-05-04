@@ -1,5 +1,9 @@
-import Header from "./Header";
+import Background from "./Background";
+import Main from "./Main";
+import Title from "./Title";
 
 export {
-  Header
+  Background,
+  Main,
+  Title
 }

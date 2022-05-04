@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export type BackgroundImageProps = {
+export type ImageProps = {
   url: string;
 }
 
-export const BackgroundImage = styled.div<BackgroundImageProps>`
+export const Image = styled.div<ImageProps>`
   width: 100%;
   height: 350px;
 

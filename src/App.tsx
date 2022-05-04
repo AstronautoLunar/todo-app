@@ -1,15 +1,21 @@
 import GlobalStyle from './styles/GlobalStyle';
 
-import { Header } from './components';
+import { 
+  Background,
+  Main,
+  Title
+} from './components';
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle/>
-      <Header
+      <Background
         url={require('./assets/bg-desktop-dark.jpg')}
       />
-    
+      <Main>
+        
+      </Main>
     </div>
   );
 }
