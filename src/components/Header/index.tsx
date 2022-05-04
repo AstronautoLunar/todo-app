@@ -1,10 +1,10 @@
 import { Area } from './styles';
 
-type MainProps = {
+type HeaderProps = {
   children: JSX.Element | JSX.Element[];
 }
 
-function Main({ children }: MainProps) {
+function Header({ children }: HeaderProps) {
   return (
     <Area>
       { children }
@@ -12,4 +12,4 @@ function Main({ children }: MainProps) {
   );
 }
 
-export default Main;
+export default Header;
