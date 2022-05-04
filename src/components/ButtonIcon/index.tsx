@@ -1,11 +1,11 @@
 import { Icon } from './styles';
 
-type ButtonIcon = {
+type ButtonIconProps = {
   mode: 'dark' | 'light';
   onClick?: () => void;
 }
 
-function alternateModeIcon(mode: ButtonIcon['mode']) {
+function alternateModeIcon(mode: ButtonIconProps['mode']) {
   switch(mode) {
     case 'dark':
       return require(`../../assets/icon-moon.svg`).default;
@@ -18,7 +18,7 @@ function alternateModeIcon(mode: ButtonIcon['mode']) {
   }
 }
 
-function ButtonIcon({ mode, onClick }: ButtonIcon) {
+function ButtonIcon({ mode, onClick }: ButtonIconProps) {
   return (
     <Icon
       src={alternateModeIcon(mode)}

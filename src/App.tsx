@@ -3,6 +3,7 @@ import GlobalStyle from './styles/GlobalStyle';
 import { 
   Background,
   ButtonIcon,
+  ListTask,
   Main,
   Header,
   InputTask,
@@ -27,6 +28,25 @@ function App() {
           value=''
           modeDark={true}
           placeholder='Create a new todo...'
+        />
+        <ListTask
+          data={[
+            {
+              id: '01',
+              text: 'Lavar a louça',
+              checked: false
+            },
+            {
+              id: '02',
+              text: 'Varrer a casa',
+              checked: false
+            },
+            {
+              id: '03',
+              text: 'Lavar o banheiro',
+              checked: false
+            },
+          ]}
         />
       </Main>
     </div>

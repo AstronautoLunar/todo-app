@@ -28,7 +28,7 @@ function toggleMode(mode: AreaProps['mode'], {
 
 export const Area = styled.div<AreaProps>`
   width: 100%;
-  height: 75px;
+  padding: 22px 0;
 
   background-color: ${props => toggleMode(props.mode, {
     dark: colors.dark.veryDarkDesaturatedBlue,
@@ -82,5 +82,5 @@ export const Circle = styled.div<CircleProps>`
   border: 1px solid ${colors.dark.veryDarkGrayishBlue2};
   border-radius: 100%;
 
-  margin: 24px;
+  margin: 0 24px;
 `;
