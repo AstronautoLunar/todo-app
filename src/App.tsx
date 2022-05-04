@@ -5,6 +5,7 @@ import {
   ButtonIcon,
   Main,
   Header,
+  InputTask,
   Title
 } from './components';
 
@@ -22,7 +23,11 @@ function App() {
             mode='light'
           />
         </Header>
-        
+        <InputTask
+          value=''
+          modeDark={true}
+          placeholder='Create a new todo...'
+        />
       </Main>
     </div>
   );

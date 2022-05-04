@@ -1,18 +1,29 @@
-import { Area, Input } from './styles';
+import { Area, Circle, Input } from './styles';
 
-type InputTaskProps = {
-  children: string;
-  modeDark: boolean;
-  value: string;
+export function CheckInput() {
+  return (
+    <Circle/>
+  )
 }
 
-function InputTask({ value, modeDark }: InputTaskProps) {
+type InputTaskProps = {
+  modeDark: boolean;
+  value: string;
+  placeholder: string;
+}
+
+function InputTask({ 
+    value, 
+    modeDark,
+    placeholder
+  }: InputTaskProps) {
   return (
     <Area mode={modeDark ? 'dark' : 'light'}>
-      
+      <CheckInput/>
       <Input
         value={value}
         colorText={modeDark ? 'light' : 'dark'}
+        placeholder={placeholder}
       />
     </Area>
   );
