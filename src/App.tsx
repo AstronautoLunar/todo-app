@@ -34,7 +34,7 @@ function App() {
             {
               id: '01',
               text: 'Lavar a louça',
-              checked: false
+              checked: true
             },
             {
               id: '02',
