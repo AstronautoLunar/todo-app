@@ -1,6 +1,7 @@
 import { 
-  // AreaButtonFilterTools, 
-  AreaTools 
+  AreaButtonFilterTools, 
+  AreaTools,
+  TextTools
 } from './styles';
 
 type FilterActions = {
@@ -22,52 +23,34 @@ function Tools({
 }: ToolsProps) {
   return (
     <AreaTools>
-      {/* <Text 
-        modeDark={true}
-        opacity={0.2}
-        size='12px'
-        letterSpacing={1}
-      >
+      <TextTools modeDark={true}>
         { quantityItem } items left
-      </Text>
+      </TextTools>
       <AreaButtonFilterTools>
-        <Text 
+        <TextTools 
           modeDark={true}
           onClick={filterActions.all}
-          marginRight='16px'
-          opacity={0.2}
-          size='14px'
         >
           All
-        </Text>
+        </TextTools>
 
-        <Text 
+        <TextTools 
           modeDark={true}
           onClick={filterActions.active}
-          opacity={0.2}
-          size='14px'
         >
             Active  
-        </Text>
+        </TextTools>
 
-        <Text 
+        <TextTools 
           modeDark={true}
           onClick={filterActions.completed}
-          marginLeft='16px'
-          opacity={0.2}
-          size='14px'
         >
             Completed
-        </Text>
+        </TextTools>
       </AreaButtonFilterTools>
-      <Text
-        modeDark={true}
-        size='12px'
-        opacity={0.2}
-        onClick={clearAction}
-      >
+      <TextTools modeDark={true}>
         Clear Completed
-      </Text> */}
+      </TextTools>
     </AreaTools>
   );
 }
